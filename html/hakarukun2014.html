@@ -1,3 +1,6580 @@
-<html>
+<!--
+ Copyright (c) 2016 Ryunosuke Note
+ Released under the MIT license
+ http://opensource.org/licenses/mit-license.php
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML lang="ja">
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+
+<TITLE>H A K A R U K U N 2 0 1 4</TITLE>
+
+</HEAD>
+
+
+<body BGCOLOR="#E4F3D1">
+
+
+
+<FORM name="hakarukun">  
+<table id="PeriodicTable">  <TR><TH COLSPAN="18">H A K A R U K U N 2 0 1 4</TH></TR>
+
+ 
+<TR ALIGN="center">
+<TD><INPUT TYPE="button" VALUE="H" onClick="selectH()"></TD>
+<TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD>
+<TD><INPUT TYPE="button" VALUE="He" onClick="selectHe()"></TD>
+</TR>
+
+<TR ALIGN="center">
+<TD><INPUT TYPE="button" VALUE="Li" onClick="selectLi()"></TD>
+<TD><INPUT TYPE="button" VALUE="Be" onClick="selectBe()"></TD>
+<TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD>
+<TD><INPUT TYPE="button" VALUE="B" onClick="selectB()"></TD>
+<TD><INPUT TYPE="button" VALUE="C" onClick="selectC()"></TD>
+<TD><INPUT TYPE="button" VALUE="N" onClick="selectN()"></TD>
+<TD><INPUT TYPE="button" VALUE="O" onClick="selectO()"></TD>
+<TD><INPUT TYPE="button" VALUE="F" onClick="selectF()"></TD>
+<TD><INPUT TYPE="button" VALUE="Ne" onClick="selectNe()"></TD>
+</TR>
+
+<TR ALIGN="center">
+<TD><INPUT TYPE="button" VALUE="Na" onClick="selectNa()"></TD>
+<TD><INPUT TYPE="button" VALUE="Mg" onClick="selectMg()"></TD>
+<TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD>
+<TD><INPUT TYPE="button" VALUE="Al" onClick="selectAl()"></TD>
+<TD><INPUT TYPE="button" VALUE="Si" onClick="selectSi()"></TD>
+<TD><INPUT TYPE="button" VALUE="P" onClick="selectP()"></TD>
+<TD><INPUT TYPE="button" VALUE="S" onClick="selectS()"></TD>
+<TD><INPUT TYPE="button" VALUE="Cl" onClick="selectCl()"></TD>
+<TD><INPUT TYPE="button" VALUE="Ar" onClick="selectAr()"></TD>
+</TR>
+
+<TR ALIGN="center">
+<TD><INPUT TYPE="button" VALUE="K" onClick="selectK()"></TD>
+<TD><INPUT TYPE="button" VALUE="Ca" onClick="selectCa()"></TD>
+<TD><INPUT TYPE="button" VALUE="Sc" onClick="selectSc()"></TD>
+<TD><INPUT TYPE="button" VALUE="Ti" onClick="selectTi()"></TD>
+<TD><INPUT TYPE="button" VALUE="V" onClick="selectV()"></TD>
+<TD><INPUT TYPE="button" VALUE="Cr" onClick="selectCr()"></TD>
+<TD><INPUT TYPE="button" VALUE="Mn" onClick="selectMn()"></TD>
+<TD><INPUT TYPE="button" VALUE="Fe" onClick="selectFe()"></TD>
+<TD><INPUT TYPE="button" VALUE="Co" onClick="selectCo()"></TD>
+<TD><INPUT TYPE="button" VALUE="Ni" onClick="selectNi()"></TD>
+<TD><INPUT TYPE="button" VALUE="Cu" onClick="selectCu()"></TD>
+<TD><INPUT TYPE="button" VALUE="Zn" onClick="selectZn()"></TD>
+<TD><INPUT TYPE="button" VALUE="Ga" onClick="selectGa()"></TD>
+<TD><INPUT TYPE="button" VALUE="Ge" onClick="selectGe()"></TD>
+<TD><INPUT TYPE="button" VALUE="As" onClick="selectAs()"></TD>
+<TD><INPUT TYPE="button" VALUE="Se" onClick="selectSe()"></TD>
+<TD><INPUT TYPE="button" VALUE="Br" onClick="selectBr()"></TD>
+<TD><INPUT TYPE="button" VALUE="Kr" onClick="selectKr()"></TD>
+</TR>
+
+<TR ALIGN="center"><TD><INPUT TYPE="button" VALUE="Rb" onClick="selectRb()"></TD>
+<TD><INPUT TYPE="button" VALUE="Sr" onClick="selectSr()"></TD>
+<TD><INPUT TYPE="button" VALUE="Y" onClick="selectY()"></TD>
+<TD><INPUT TYPE="button" VALUE="Zr" onClick="selectZr()"></TD>
+<TD><INPUT TYPE="button" VALUE="Nb" onClick="selectNb()"></TD>
+<TD><INPUT TYPE="button" VALUE="Mo" onClick="selectMo()"></TD>
+<TD><INPUT TYPE="button" VALUE="Tc" onClick="selectTc()"></TD>
+<TD><INPUT TYPE="button" VALUE="Ru" onClick="selectRu()"></TD>
+<TD><INPUT TYPE="button" VALUE="Rh" onClick="selectRh()"></TD>
+<TD><INPUT TYPE="button" VALUE="Pd" onClick="selectPd()"></TD>
+<TD><INPUT TYPE="button" VALUE="Ag" onClick="selectAg()"></TD>
+<TD><INPUT TYPE="button" VALUE="Cd" onClick="selectCd()"></TD>
+<TD><INPUT TYPE="button" VALUE="In" onClick="selectIn()"></TD>
+<TD><INPUT TYPE="button" VALUE="Sn" onClick="selectSn()"></TD>
+<TD><INPUT TYPE="button" VALUE="Sb" onClick="selectSb()"></TD>
+<TD><INPUT TYPE="button" VALUE="Te" onClick="selectTe()"></TD>
+<TD><INPUT TYPE="button" VALUE="I" onClick="selectI()"></TD>
+<TD><INPUT TYPE="button" VALUE="Xe" onClick="selectXe()"></TD>
+</TR>
+
+<TR ALIGN="center">
+<TD><INPUT TYPE="button" VALUE="Cs" onClick="selectCs()"></TD>
+<TD><INPUT TYPE="button" VALUE="Ba" onClick="selectBa()"></TD>
+<TD><INPUT TYPE="button" VALUE="Lu" onClick="selectLu()"></TD>
+<TD><INPUT TYPE="button" VALUE="Hf" onClick="selectHf()"></TD>
+<TD><INPUT TYPE="button" VALUE="Ta" onClick="selectTa()"></TD>
+<TD><INPUT TYPE="button" VALUE="W" onClick="selectW()"></TD>
+<TD><INPUT TYPE="button" VALUE="Re" onClick="selectRe()"></TD>
+<TD><INPUT TYPE="button" VALUE="Os" onClick="selectOs()"></TD>
+<TD><INPUT TYPE="button" VALUE="Ir" onClick="selectIr()"></TD>
+<TD><INPUT TYPE="button" VALUE="Pt" onClick="selectPt()"></TD>
+<TD><INPUT TYPE="button" VALUE="Au" onClick="selectAu()"></TD>
+<TD><INPUT TYPE="button" VALUE="Hg" onClick="selectHg()"></TD>
+<TD><INPUT TYPE="button" VALUE="Tl" onClick="selectTl()"></TD>
+<TD><INPUT TYPE="button" VALUE="Pb" onClick="selectPb()"></TD>
+<TD><INPUT TYPE="button" VALUE="Bi" onClick="selectBi()"></TD>
+<TD><INPUT TYPE="button" VALUE="Po" onClick="selectPo()"></TD>
+<TD><INPUT TYPE="button" VALUE="At" onClick="selectAt()"></TD>
+<TD><INPUT TYPE="button" VALUE="Rn" onClick="selectRn()"></TD>
+</TR>
+
+<TR ALIGN="center">
+<TD><INPUT TYPE="button" VALUE="Fr" onClick="selectFr()"></TD>
+<TD><INPUT TYPE="button" VALUE="Ra" onClick="selectRa()"></TD>
+</tr>
+
+<TR ALIGN="center">
+<TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD>
+</TR>
+
+<TR ALIGN="center">
+<TD>__</TD><TD>__</TD><TD>__</TD>
+<TD><INPUT TYPE="button" VALUE="La" onClick="selectLa()"></TD>
+<TD><INPUT TYPE="button" VALUE="Ce" onClick="selectCe()"></TD>
+<TD><INPUT TYPE="button" VALUE="Pr" onClick="selectPr()"></TD>
+<TD><INPUT TYPE="button" VALUE="Nd" onClick="selectNd()"></TD>
+<TD><INPUT TYPE="button" VALUE="Pm" onClick="selectPm()"></TD>
+<TD><INPUT TYPE="button" VALUE="Sm" onClick="selectSm()"></TD>
+<TD><INPUT TYPE="button" VALUE="Eu" onClick="selectEu()"></TD>
+<TD><INPUT TYPE="button" VALUE="Gd" onClick="selectGd()"></TD>
+<TD><INPUT TYPE="button" VALUE="Tb" onClick="selectTb()"></TD>
+<TD><INPUT TYPE="button" VALUE="Dy" onClick="selectDy()"></TD>
+<TD><INPUT TYPE="button" VALUE="Ho" onClick="selectHo()"></TD>
+<TD><INPUT TYPE="button" VALUE="Er" onClick="selectEr()"></TD>
+<TD><INPUT TYPE="button" VALUE="Tm" onClick="selectTm()"></TD>
+<TD><INPUT TYPE="button" VALUE="Yb" onClick="selectYb()"></TD>
+<TD>__</TD>
+</TR>
+
+<TR ALIGN="center">
+<TD>__</TD><TD>__</TD><TD>__</TD>
+<TD><INPUT TYPE="button" VALUE="Ac" onClick="selectAc()"></TD>
+<TD><INPUT TYPE="button" VALUE="Th" onClick="selectTh()"></TD>
+<TD><INPUT TYPE="button" VALUE="Pa" onClick="selectPa()"></TD>
+<TD><INPUT TYPE="button" VALUE="U" onClick="selectU()"></TD>
+<TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD>
+</TR>
+<TR ALIGN="center">
+<TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD>
+</TR><TR ALIGN="center">
+<TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD>
+</TR><TR ALIGN="center">
+<TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD><TD>__</TD>
+</TR>
+</table><div id="Compound"></div><br><br><br>
+<table id="SelectedTable"  border="2"><tr align="center"><td><div>element</div></td><td><div>ratio</div></td><td><div>ratio</div></td><td><div>source %</div></td><td><div>&#x3E;&#x3E;</div></td><td><div>target %</div></td><td><div>weight</div></td><td><div>delete element</div></td></tr></table>
+
+<p>
+	<div>weight of alloy<input type="text" id="sum" value="0.0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div id="sumweight" style="display: inline-block; _display: inline;">0.0</div>&nbsp;a.u.</div>	
+<div>Comment:<input type="text" id="comment"></div>
+<br>
+<input type="button" value="at% >> wt%" onClick="at2wt()"> 
+<input type="button" value="wt% >> at%" onClick="wt2at()">
+<br>
+<input type="button" value="snapshot" onClick="snapshot()">
+<br><br>
+<input type="button" value="generate compound" onClick="gencomp()">
+<br><br>
+<input type="submit" value="refresh" >
+</p>
+<table id="result"></table>
+
+  </FORM>
+
+
+<script type="text/javascript" >
+
+<!--
+
+function at2wt() {
+
+for (i=0;i <= 92;i++){
+input[i] = 0;
+result[i] = 0;
+weight[i] = 0;
+	}
+
+var amountM = 0;
+var amountA = 0;
+var sum = document.getElementById('sum').value;
+sum = Math.abs(Number(sum));
+if (isNaN(sum)) sum = 0
+
+		var copysum = document.getElementById('sumweight');
+		copysum.innerHTML = sum ;
+
+for (i=0;i <= 92;i++){
+
+var selected = document.getElementById(i);
+if (selected){
+input[i] = document.getElementById(i).value;
+if (isNaN(input[i])) alert(atom[i]+" : not number")
+input[i] = Math.abs(Number(input[i]));
+
+amountM = amountM + input[i] * mass[i];
+amountA = amountA + input[i];
+	}
+	}
+
+if (!isNaN(amountM)) {
+
+for (i=0;i <= 92;i++){
+
+var selected = document.getElementById(i);
+if (selected){
+var ratio = input[i];
+result[i] = input[i] * mass[i] / amountM;
+input[i] = input[i] / amountA;
+weight[i] = sum * result[i];
+
+
+
+
+		var addresult = document.createElement("div");
+
+
+		var addtr = document.getElementById('row'+atom[i]);
+		var oldresult = addtr.cells[5];
+		oldresult.innerHTML = (result[i] * 100).toFixed(5) + " wt%";
+
+		var oldresult = addtr.cells[3];
+		oldresult.innerHTML = (input[i] * 100).toFixed(5) + " at%  ";
+
+		var oldresult = addtr.cells[6];
+		oldresult.innerHTML = weight[i].toFixed(5) + " a.u.  ";
+		
+		var oldresult = addtr.cells[2];
+		oldresult.innerHTML = ratio ;
+			}
+		}
+	}
+}
+
+
+function wt2at() {
+
+for (i=0;i <= 92;i++){
+input[i] = 0;
+result[i] = 0;
+weight[i] = 0;
+	}
+
+var amountA = 0;
+var amountM = 0;
+
+var sum = document.getElementById('sum').value;
+sum = Math.abs(Number(sum));
+if (isNaN(sum)) sum = 0
+
+		var copysum = document.getElementById('sumweight');
+		copysum.innerHTML = sum ;
+
+for (i=0;i <= 92;i++){
+
+var selected = document.getElementById(i);
+if (selected){
+input[i] = document.getElementById(i).value;
+if (isNaN(input[i])) alert(atom[i]+" : not number")
+input[i] = Math.abs(Number(input[i]));
+
+amountA = amountA + input[i] / mass[i];
+amountM = amountM + input[i];
+		}
+	}
+
+if (!isNaN(amountA)) {
+
+for (i=0;i <= 92;i++){
+
+var selected = document.getElementById(i);
+if (selected){
+var ratio = input[i];
+result[i] = input[i] / mass[i] / amountA;
+input[i] = input[i] / amountM;
+weight[i] = sum * input[i];
+//alert(atom[i]+result[i]);
+
+
+
+		var addresult = document.createElement("div");
+
+
+		var addtr = document.getElementById('row'+atom[i]);
+		var oldresult = addtr.cells[5];
+		oldresult.innerHTML = (result[i] * 100).toFixed(5) + " at%";
+
+		var oldresult = addtr.cells[3];
+		oldresult.innerHTML = (input[i] * 100).toFixed(5) + " wt%  ";
+
+		var oldresult = addtr.cells[6];
+		oldresult.innerHTML = weight[i].toFixed(5) + " a.u.  ";
+		
+		var oldresult = addtr.cells[2];
+		oldresult.innerHTML = ratio ;
+			}
+		}
+	}
+}
+
+
+function selectLi() {
+
+var multiatom = document.getElementById('3');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "3";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Li";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowLi';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteLi , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);
+        }
+
+}
+
+function selectH() {
+
+var multiatom = document.getElementById('1');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "1";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "H";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = "rowH";
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteH , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);
+		
+        }
+
+}
+
+
+function selectHe() {
+
+var multiatom = document.getElementById('2');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "2";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "He";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = "rowHe";
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteHe , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);
+}
+
+}
+
+
+function selectBe() {
+
+var multiatom = document.getElementById('4');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "4";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Be";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowBe';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteBe , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectB() {
+
+var multiatom = document.getElementById('5');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "5";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "B";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowB';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteB , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectC() {
+
+var multiatom = document.getElementById('6');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "6";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "C";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowC';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteC , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectN() {
+
+var multiatom = document.getElementById('7');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "7";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "N";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowN';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteN , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectO() {
+
+var multiatom = document.getElementById('8');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "8";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "O";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowO';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteO , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectF() {
+
+var multiatom = document.getElementById('9');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "9";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "F";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowF';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteF , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectNe() {
+
+var multiatom = document.getElementById('10');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "10";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Ne";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowNe';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteNe , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectNa() {
+
+var multiatom = document.getElementById('11');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "11";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Na";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowNa';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteNa , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectMg() {
+
+var multiatom = document.getElementById('12');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "12";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Mg";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowMg';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteMg , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectAl() {
+
+var multiatom = document.getElementById('13');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "13";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Al";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowAl';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteAl , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectSi() {
+
+var multiatom = document.getElementById('14');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "14";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Si";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowSi';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteSi , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectP() {
+
+var multiatom = document.getElementById('15');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "15";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "P";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowP';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteP , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectS() {
+
+var multiatom = document.getElementById('16');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "16";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "S";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowS';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteS , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectCl() {
+
+var multiatom = document.getElementById('17');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "17";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Cl";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowCl';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteCl , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectAr() {
+
+var multiatom = document.getElementById('18');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "18";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Ar";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowAr';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteAr , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectK() {
+
+var multiatom = document.getElementById('19');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "19";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "K";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowK';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteK , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectCa() {
+
+var multiatom = document.getElementById('20');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "20";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Ca";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowCa';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteCa , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectSc() {
+
+var multiatom = document.getElementById('21');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "21";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Sc";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowSc';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteSc , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectTi() {
+
+var multiatom = document.getElementById('22');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "22";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Ti";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowTi';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteTi , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectV() {
+
+var multiatom = document.getElementById('23');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "23";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "V";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowV';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteV , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectCr() {
+
+var multiatom = document.getElementById('24');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "24";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Cr";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowCr';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteCr , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectMn() {
+
+var multiatom = document.getElementById('25');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "25";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Mn";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowMn';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteMn , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectFe() {
+
+var multiatom = document.getElementById('26');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "26";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Fe";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowFe';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteFe , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectCo() {
+
+var multiatom = document.getElementById('27');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "27";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Co";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowCo';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteCo , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectNi() {
+
+var multiatom = document.getElementById('28');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "28";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Ni";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowNi';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteNi , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectCu() {
+
+var multiatom = document.getElementById('29');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "29";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Cu";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowCu';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteCu , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectZn() {
+
+var multiatom = document.getElementById('30');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "30";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Zn";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowZn';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteZn , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectGa() {
+
+var multiatom = document.getElementById('31');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "31";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Ga";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowGa';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteGa , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectGe() {
+
+var multiatom = document.getElementById('32');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "32";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Ge";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowGe';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteGe , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectAs() {
+
+var multiatom = document.getElementById('33');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "33";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "As";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowAs';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteAs , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectSe() {
+
+var multiatom = document.getElementById('34');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "34";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Se";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowSe';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteSe , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectBr() {
+
+var multiatom = document.getElementById('35');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "35";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Br";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowBr';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteBr , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectKr() {
+
+var multiatom = document.getElementById('36');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "36";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Kr";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowKr';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteKr , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectRb() {
+
+var multiatom = document.getElementById('37');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "37";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Rb";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowRb';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteRb , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectSr() {
+
+var multiatom = document.getElementById('38');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "38";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Sr";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowSr';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteSr , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectY() {
+
+var multiatom = document.getElementById('39');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "39";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Y";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowY';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteY , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectZr() {
+
+var multiatom = document.getElementById('40');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "40";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Zr";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowZr';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteZr , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectNb() {
+
+var multiatom = document.getElementById('41');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "41";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Nb";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowNb';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteNb , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectMo() {
+
+var multiatom = document.getElementById('42');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "42";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Mo";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowMo';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteMo , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectTc() {
+
+var multiatom = document.getElementById('43');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "43";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Tc";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowTc';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteTc , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectRu() {
+
+var multiatom = document.getElementById('44');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "44";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Ru";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowRu';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteRu , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectRh() {
+
+var multiatom = document.getElementById('45');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "45";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Rh";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowRh';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteRh , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectPd() {
+
+var multiatom = document.getElementById('46');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "46";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Pd";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowPd';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deletePd , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectAg() {
+
+var multiatom = document.getElementById('47');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "47";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Ag";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowAg';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteAg , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectCd() {
+
+var multiatom = document.getElementById('48');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "48";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Cd";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowCd';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteCd , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectIn() {
+
+var multiatom = document.getElementById('49');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "49";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "In";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowIn';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteIn , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectSn() {
+
+var multiatom = document.getElementById('50');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "50";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Sn";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowSn';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteSn , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectSb() {
+
+var multiatom = document.getElementById('51');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "51";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Sb";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowSb';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteSb , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectTe() {
+
+var multiatom = document.getElementById('52');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "52";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Te";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowTe';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteTe , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectI() {
+
+var multiatom = document.getElementById('53');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "53";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "I";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowI';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteI , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectXe() {
+
+var multiatom = document.getElementById('54');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "54";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Xe";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowXe';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteXe , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectCs() {
+
+var multiatom = document.getElementById('55');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "55";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Cs";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowCs';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteCs , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectBa() {
+
+var multiatom = document.getElementById('56');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "56";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Ba";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowBa';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteBa , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectLa() {
+
+var multiatom = document.getElementById('57');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "57";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "La";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowLa';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteLa , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectCe() {
+
+var multiatom = document.getElementById('58');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "58";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Ce";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowCe';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteCe , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectPr() {
+
+var multiatom = document.getElementById('59');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "59";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Pr";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowPr';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deletePr , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectNd() {
+
+var multiatom = document.getElementById('60');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "60";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Nd";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowNd';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteNd , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectPm() {
+
+var multiatom = document.getElementById('61');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "61";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Pm";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowPm';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deletePm , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectSm() {
+
+var multiatom = document.getElementById('62');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "62";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Sm";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowSm';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteSm , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectEu() {
+
+var multiatom = document.getElementById('63');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "63";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Eu";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowEu';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteEu , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectGd() {
+
+var multiatom = document.getElementById('64');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "64";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Gd";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowGd';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteGd , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectTb() {
+
+var multiatom = document.getElementById('65');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "65";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Tb";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowTb';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteTb , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectDy() {
+
+var multiatom = document.getElementById('66');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "66";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Dy";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowDy';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteDy , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectHo() {
+
+var multiatom = document.getElementById('67');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "67";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Ho";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowHo';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteHo , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectEr() {
+
+var multiatom = document.getElementById('68');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "68";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Er";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowEr';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteEr , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectTm() {
+
+var multiatom = document.getElementById('69');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "69";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Tm";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowTm';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteTm , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectYb() {
+
+var multiatom = document.getElementById('70');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "70";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Yb";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowYb';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteYb , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectLu() {
+
+var multiatom = document.getElementById('71');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "71";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Lu";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowLu';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteLu , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectHf() {
+
+var multiatom = document.getElementById('72');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "72";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Hf";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowHf';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteHf , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectTa() {
+
+var multiatom = document.getElementById('73');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "73";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Ta";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowTa';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteTa , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectW() {
+
+var multiatom = document.getElementById('74');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "74";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "W";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowW';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteW , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectRe() {
+
+var multiatom = document.getElementById('75');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "75";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Re";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowRe';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteRe , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectOs() {
+
+var multiatom = document.getElementById('76');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "76";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Os";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowOs';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteOs , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectIr() {
+
+var multiatom = document.getElementById('77');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "77";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Ir";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowIr';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteIr , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectPt() {
+
+var multiatom = document.getElementById('78');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "78";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Pt";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowPt';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deletePt , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectAu() {
+
+var multiatom = document.getElementById('79');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "79";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Au";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowAu';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteAu , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectHg() {
+
+var multiatom = document.getElementById('80');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "80";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Hg";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowHg';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteHg , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectTl() {
+
+var multiatom = document.getElementById('81');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "81";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Tl";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowTl';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteTl , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectPb() {
+
+var multiatom = document.getElementById('82');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "82";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Pb";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowPb';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deletePb , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectBi() {
+
+var multiatom = document.getElementById('83');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "83";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Bi";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowBi';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteBi , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectPo() {
+
+var multiatom = document.getElementById('84');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "84";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Po";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowPo';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deletePo , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectAt() {
+
+var multiatom = document.getElementById('85');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "85";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "At";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowAt';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteAt , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectRn() {
+
+var multiatom = document.getElementById('86');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "86";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Rn";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowRn';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteRn , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectFr() {
+
+var multiatom = document.getElementById('87');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "87";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Fr";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowFr';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteFr , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectRa() {
+
+var multiatom = document.getElementById('88');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "88";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Ra";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowRa';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteRa , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectAc() {
+
+var multiatom = document.getElementById('89');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "89";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Ac";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowAc';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteAc , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectTh() {
+
+var multiatom = document.getElementById('90');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "90";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Th";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowTh';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteTh , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectPa() {
+
+var multiatom = document.getElementById('91');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "91";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "Pa";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowPa';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deletePa , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);}
+
+}function selectU() {
+
+var multiatom = document.getElementById('92');
+
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "92";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = "U";
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = 'rowU';
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteU , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);
+}
+
+}
+
+
+function selectComp() {
+
+var multiatom = document.getElementById('0');
+
+　if (!multiatom){
+		var table = document.getElementById('SelectedTable');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "text";
+		inputtag.id = "0";
+
+		var satom = document.createElement("div");
+		satom.innerHTML = atom[0];
+
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+
+		var newtr = table.insertRow( table.rows.length );
+		newtr.id = "row" + atom[0];
+		newtr.insertCell(-1).appendChild(satom);
+
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag);
+		
+		var ratiocell = document.createElement("div");
+		ratiocell.innerHTML = "**";
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(ratiocell);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = " &#x3E;&#x3E; ";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** %";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var nullcell = document.createElement("div");
+		nullcell.innerHTML = "*.***** a.u.";
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(nullcell);
+		
+		var inputtag1 = document.createElement("input");
+		inputtag1.type = "button";
+		inputtag1.value = "delete";
+		inputtag1.addEventListener("click" , deleteComp , false);
+		
+		var newtd = newtr.insertCell(-1);
+		newtd.appendChild(inputtag1);
+}
+
+}
+
+
+
+
+
+var atom = ["Comp","H","He","Li","Be","B","C","N","O","F","Ne","Na","Mg","Al","Si","P","S","Cl","Ar","K","Ca","Sc","Ti","V","Cr","Mn","Fe","Co","Ni","Cu","Zn","Ga","Ge","As","Se","Br","Kr","Rb","Sr","Y","Zr","Nb","Mo","Tc","Ru","Rh","Pd","Ag","Cd","In","Sn","Sb","Te","I","Xe","Cs","Ba","La","Ce","Pr","Nd","Pm","Sm","Eu","Gd","Tb","Dy","Ho","Er","Tm","Yb","Lu","Hf","Ta","W","Re","Os","Ir","Pt","Au","Hg","Tl","Pb","Bi","Po","At","Rn","Fr","Ra","Ac","Th","Pa","U"];
+var mass = new Array();
+var input = new Array();
+var result = new Array();
+var weight = new Array();
+
+var compflag ;
+var nsnapshot = 1000;
+
+mass[0] = 0;
+mass[1] = 1.00794;
+mass[2] = 4.002602;
+mass[3] = 6.941;
+mass[4] = 9.01218;
+mass[5] = 10.811;
+mass[6] = 12.0107;
+mass[7] = 14.0067;
+mass[8] = 15.9994;
+mass[9] = 18.9984;
+mass[10] = 20.1797;
+mass[11] = 22.989770;
+mass[12] = 24.305;
+mass[13] = 26.981538;
+mass[14] = 28.0855;
+mass[15] = 30.973761;
+mass[16] = 32.065;
+mass[17] = 35.5;
+mass[18] = 39.948;
+mass[19] = 39.0983;
+mass[20] = 40.078;
+mass[21] = 44.955910;
+mass[22] = 47.867;
+mass[23] = 50.9415;
+mass[24] = 51.9961;
+mass[25] = 54.938049;
+mass[26] = 55.845;
+mass[27] = 58.933200;
+mass[28] = 58.6934;
+mass[29] = 63.546;
+mass[30] = 65.409;
+mass[31] = 69.723;
+mass[32] = 72.64;
+mass[33] = 74.92160;
+mass[34] = 78.96;
+mass[35] = 79.904;
+mass[36] = 83.798;
+mass[37] = 85.4678;
+mass[38] = 87.62;
+mass[39] = 88.90585;
+mass[40] = 91.224;
+mass[41] = 92.90638;
+mass[42] = 95.94;
+mass[43] = 98;
+mass[44] = 101.07;
+mass[45] = 102.90550;
+mass[46] = 106.42;
+mass[47] = 107.8683;
+mass[48] = 112.411;
+mass[49] = 114.818;
+mass[50] = 118.710;
+mass[51] = 121.760;
+mass[52] = 127.60;
+mass[53] = 126.90447;
+mass[54] = 131.293;
+mass[55] = 132.90545;
+mass[56] = 137.327;
+mass[57] = 138.9055;
+mass[58] = 140.116;
+mass[59] = 140.90765;
+mass[60] = 144.24;
+mass[61] = 145;
+mass[62] = 150.36;
+mass[63] = 151.964;
+mass[64] = 157.25;
+mass[65] = 158.92534;
+mass[66] = 162.500;
+mass[67] = 164.9303;
+mass[68] = 167.259;
+mass[69] = 168.93421;
+mass[70] = 173.04;
+mass[71] = 174.967;
+mass[72] = 178.49;
+mass[73] = 180.9479;
+mass[74] = 183.84;
+mass[75] = 186.207;
+mass[76] = 190.23;
+mass[77] = 192.217;
+mass[78] = 195.078;
+mass[79] = 196.96655;
+mass[80] = 200.59;
+mass[81] = 204.3833;
+mass[82] = 207.2;
+mass[83] = 208.98038;
+mass[84] = 209;
+mass[85] = 210;
+mass[86] = 222;
+mass[87] = 223;
+mass[88] = 226.0254;
+mass[89] = 227;
+mass[90] = 232.0381;
+mass[91] = 231.03588;
+mass[92] = 238.0289;
+
+
+
+function gencomp() {
+if (!compflag) {
+var comp = "";
+var compmass = 0; 
+for (i=0;i < 92;i++){
+
+var selected = document.getElementById(i);
+if (selected){
+input[i] = document.getElementById(i).value;
+if (isNaN(input[i])) {
+alert(atom[i]+" : not number");
+return ;
+} else {
+input[i] = Math.abs(Number(input[i]));
+
+comp = comp + atom[i] + input[i];
+compmass = compmass + mass[i] * input[i];
+
+        }
+	}
+	}
+
+atom[0] = comp;
+mass[0] = compmass;
+compflag = 1;
+
+
+		var genbut = document.getElementById('Compound');
+
+		var inputtag = document.createElement("input");
+		inputtag.type = "button";
+		inputtag.value = atom[0];
+		inputtag.addEventListener("click" , selectComp , false);
+
+		genbut.appendChild(inputtag);
+
+  }
+}
+
+
+function snapshot() {
+
+		var snaptable = document.getElementById('result');
+		var selectedtable = document.getElementById('SelectedTable');
+
+		var snapspacetr = snaptable.insertRow( -1 );
+		snapspacetr.insertCell(-1).innerHTML = "=================================================================================";
+
+		var snaptr = snaptable.insertRow(-1);
+		var comment = document.getElementById('comment').value;
+		snaptr.insertCell(-1).innerHTML = "Comment: " + comment;
+		var snaptr = snaptable.insertRow(-1);
+		var copyelement = document.getElementById('sumweight').innerHTML;
+		var daytime = new Date();
+		snaptr.insertCell(-1).innerHTML = daytime + " : weight of alloy " +  copyelement + " a.u.";
+
+
+		
+		
+		var tabletag = document.createElement("table");
+		tabletag.border = "2";
+		tabletag.id = nsnapshot ;
+
+		var snaptr = snaptable.insertRow(-1);
+		snaptr.appendChild(tabletag);
+		
+		var newtable = document.getElementById(nsnapshot);
+		
+
+		for (i=0 ; i < selectedtable.rows.length ; i++) {
+		var newtr = newtable.insertRow( newtable.rows.length );
+		
+		var copyelement = selectedtable.rows[i].cells[0].innerHTML;
+		newtr.insertCell(-1).innerHTML = copyelement ;
+				var copyelement = selectedtable.rows[i].cells[2].innerHTML;
+		newtr.insertCell(-1).innerHTML = copyelement ;
+				var copyelement = selectedtable.rows[i].cells[3].innerHTML;
+		newtr.insertCell(-1).innerHTML = copyelement ;
+				var copyelement = selectedtable.rows[i].cells[4].innerHTML;
+		newtr.insertCell(-1).innerHTML = copyelement ;
+				var copyelement = selectedtable.rows[i].cells[5].innerHTML;
+		newtr.insertCell(-1).innerHTML = copyelement ;
+				var copyelement = selectedtable.rows[i].cells[6].innerHTML;
+		newtr.insertCell(-1).innerHTML = copyelement ;
+		
+		}
+
+
+
+nsnapshot = nsnapshot + 1;
+
+		var snapspacetr = snaptable.insertRow( -1 );
+		snapspacetr.insertCell(-1).innerHTML = "=================================================================================";
+
+}
+
+
+function deleteComp() {
+    var row = document.getElementById('row' + atom[0]);
+    row.parentNode.removeChild(row);
+}
+
+function deleteH() {
+    var row = document.getElementById('rowH');
+    row.parentNode.removeChild(row);
+}
+
+function deleteHe() {
+    var row = document.getElementById('rowHe');
+    row.parentNode.removeChild(row);
+}
+
+function deleteLi() {
+    var row = document.getElementById('rowLi');
+    row.parentNode.removeChild(row);
+}
+
+function deleteBe() {
+    var row = document.getElementById('rowBe');
+    row.parentNode.removeChild(row);
+}
+
+function deleteB() {
+    var row = document.getElementById('rowB');
+    row.parentNode.removeChild(row);
+}
+
+function deleteC() {
+    var row = document.getElementById('rowC');
+    row.parentNode.removeChild(row);
+}
+
+function deleteN() {
+    var row = document.getElementById('rowN');
+    row.parentNode.removeChild(row);
+}
+
+function deleteO() {
+    var row = document.getElementById('rowO');
+    row.parentNode.removeChild(row);
+}
+
+function deleteF() {
+    var row = document.getElementById('rowF');
+    row.parentNode.removeChild(row);
+}
+
+function deleteNe() {
+    var row = document.getElementById('rowNe');
+    row.parentNode.removeChild(row);
+}
+
+function deleteNa() {
+    var row = document.getElementById('rowNa');
+    row.parentNode.removeChild(row);
+}
+
+function deleteMg() {
+    var row = document.getElementById('rowMg');
+    row.parentNode.removeChild(row);
+}
+
+function deleteAl() {
+    var row = document.getElementById('rowAl');
+    row.parentNode.removeChild(row);
+}
+
+function deleteSi() {
+    var row = document.getElementById('rowSi');
+    row.parentNode.removeChild(row);
+}
+
+function deleteP() {
+    var row = document.getElementById('rowP');
+    row.parentNode.removeChild(row);
+}
+
+function deleteS() {
+    var row = document.getElementById('rowS');
+    row.parentNode.removeChild(row);
+}
+
+function deleteCl() {
+    var row = document.getElementById('rowCl');
+    row.parentNode.removeChild(row);
+}
+
+function deleteAr() {
+    var row = document.getElementById('rowAr');
+    row.parentNode.removeChild(row);
+}
+
+function deleteK() {
+    var row = document.getElementById('rowK');
+    row.parentNode.removeChild(row);
+}
+
+function deleteCa() {
+    var row = document.getElementById('rowCa');
+    row.parentNode.removeChild(row);
+}
+
+function deleteSc() {
+    var row = document.getElementById('rowSc');
+    row.parentNode.removeChild(row);
+}
+
+function deleteTi() {
+    var row = document.getElementById('rowTi');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteV() {
+    var row = document.getElementById('rowV');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteCr() {
+    var row = document.getElementById('rowCr');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteMn() {
+    var row = document.getElementById('rowMn');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteFe() {
+    var row = document.getElementById('rowFe');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteCo() {
+    var row = document.getElementById('rowCo');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteNi() {
+    var row = document.getElementById('rowNi');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteCu() {
+    var row = document.getElementById('rowCu');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteZn() {
+    var row = document.getElementById('rowZn');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteGa() {
+    var row = document.getElementById('rowGa');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteGe() {
+    var row = document.getElementById('rowGe');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteAs() {
+    var row = document.getElementById('rowAs');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteSe() {
+    var row = document.getElementById('rowSe');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteBr() {
+    var row = document.getElementById('rowBr');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteKr() {
+    var row = document.getElementById('rowKr');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteRb() {
+    var row = document.getElementById('rowRb');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteSr() {
+    var row = document.getElementById('rowSr');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteY() {
+    var row = document.getElementById('rowY');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteZr() {
+    var row = document.getElementById('rowZr');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteNb() {
+    var row = document.getElementById('rowNb');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteMo() {
+    var row = document.getElementById('rowMo');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteTc() {
+    var row = document.getElementById('rowTc');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteRu() {
+    var row = document.getElementById('rowRu');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteRh() {
+    var row = document.getElementById('rowRh');
+    row.parentNode.removeChild(row);
+}
+
+
+function deletePd() {
+    var row = document.getElementById('rowPd');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteAg() {
+    var row = document.getElementById('rowAg');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteCd() {
+    var row = document.getElementById('rowCd');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteIn() {
+    var row = document.getElementById('rowIn');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteSn() {
+    var row = document.getElementById('rowSn');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteSb() {
+    var row = document.getElementById('rowSb');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteTe() {
+    var row = document.getElementById('rowTe');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteI() {
+    var row = document.getElementById('rowI');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteXe() {
+    var row = document.getElementById('rowXe');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteCs() {
+    var row = document.getElementById('rowCs');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteBa() {
+    var row = document.getElementById('rowBa');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteLa() {
+    var row = document.getElementById('rowLa');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteCe() {
+    var row = document.getElementById('rowCe');
+    row.parentNode.removeChild(row);
+}
+
+
+function deletePr() {
+    var row = document.getElementById('rowPr');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteNd() {
+    var row = document.getElementById('rowNd');
+    row.parentNode.removeChild(row);
+}
+
+
+function deletePm() {
+    var row = document.getElementById('rowPm');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteSm() {
+    var row = document.getElementById('rowSm');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteEu() {
+    var row = document.getElementById('rowEu');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteGd() {
+    var row = document.getElementById('rowGd');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteTb() {
+    var row = document.getElementById('rowTb');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteDy() {
+    var row = document.getElementById('rowDy');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteHo() {
+    var row = document.getElementById('rowHo');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteEr() {
+    var row = document.getElementById('rowEr');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteTm() {
+    var row = document.getElementById('rowTm');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteYb() {
+    var row = document.getElementById('rowYb');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteLu() {
+    var row = document.getElementById('rowLu');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteHf() {
+    var row = document.getElementById('rowHf');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteTa() {
+    var row = document.getElementById('rowTa');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteW() {
+    var row = document.getElementById('rowW');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteRe() {
+    var row = document.getElementById('rowRe');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteOs() {
+    var row = document.getElementById('rowOs');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteIr() {
+    var row = document.getElementById('rowIr');
+    row.parentNode.removeChild(row);
+}
+
+
+function deletePt() {
+    var row = document.getElementById('rowPt');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteAu() {
+    var row = document.getElementById('rowAu');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteHg() {
+    var row = document.getElementById('rowHg');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteAr() {
+    var row = document.getElementById('rowAr');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteTl() {
+    var row = document.getElementById('rowTl');
+    row.parentNode.removeChild(row);
+}
+
+
+function deletePb() {
+    var row = document.getElementById('rowPb');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteBi() {
+    var row = document.getElementById('rowBi');
+    row.parentNode.removeChild(row);
+}
+
+
+function deletePo() {
+    var row = document.getElementById('rowPo');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteAt() {
+    var row = document.getElementById('rowAt');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteRn() {
+    var row = document.getElementById('rowRn');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteFr() {
+    var row = document.getElementById('rowFr');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteRa() {
+    var row = document.getElementById('rowRa');
+    row.parentNode.removeChild(row);
+}
+
+
+function deleteAc() {
+    var row = document.getElementById('rowAc');
+    row.parentNode.removeChild(row);
+}
+
+function deleteTh() {
+    var row = document.getElementById('rowTh');
+    row.parentNode.removeChild(row);
+}
+
+function deletePa() {
+    var row = document.getElementById('rowPa');
+    row.parentNode.removeChild(row);
+}
+
+function deleteU() {
+    var row = document.getElementById('rowU');
+    row.parentNode.removeChild(row);
+}
+
+//-->
+
+</script>
+<noscript>
+JavaScript do not work
+</noscript>
+
+
+
+
+</body>
+
+
 </html>
 
